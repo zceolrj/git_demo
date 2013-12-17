@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.model">
+    <class name="Abbreviation" table="Abbreviation">
+        <id name="abbID" type="java.lang.Integer">
+            <generator class="native" />
+        </id>
+        <property name="docTitle" type="java.lang.String">
+            <column name="docTitle" />
+        </property>
+        <property name="docType" type="java.lang.String">
+            <column name="docType" />
+        </property>
+        <property name="abbreviation" type="java.lang.String">
+            <column name="abbreviation" />
+        </property>
+    </class>
+</hibernate-mapping>
